@@ -9,10 +9,10 @@ import time
 
 from vllm import AsyncLLMEngine
 from vllm.entrypoints.logger import RequestLogger
-from vllm.entrypoints.openai.serving_chat import OpenAIServingChat
-from vllm.entrypoints.openai.serving_completion import OpenAIServingCompletion
-from vllm.entrypoints.openai.protocol import ChatCompletionRequest, CompletionRequest, ErrorResponse
-from vllm.entrypoints.openai.serving_models import BaseModelPath, LoRAModulePath, OpenAIServingModels
+from vllm.entrypoints.openai.chat_completion.serving import OpenAIServingChat
+from vllm.entrypoints.openai.completion.serving import OpenAIServingCompletion
+from vllm.entrypoints.openai.chat_completion.protocol import ChatCompletionRequest, CompletionRequest, ErrorResponse
+from vllm.entrypoints.openai.models.protocol import BaseModelPath, LoRAModulePath, OpenAIServingModels
 
 
 from utils import DummyRequest, JobInput, BatchSize, create_error_response
