@@ -13,7 +13,8 @@ from vllm.entrypoints.openai.chat_completion.serving import OpenAIServingChat
 from vllm.entrypoints.openai.completion.serving import OpenAIServingCompletion
 from vllm.entrypoints.openai.chat_completion.protocol import ChatCompletionRequest
 from vllm.entrypoints.openai.completion.protocol import CompletionRequest
-from vllm.entrypoints.openai.models.protocol import BaseModelPath, LoRAModulePath, OpenAIServingModels
+from vllm.entrypoints.openai.models.protocol import BaseModelPath, LoRAModulePath
+from vllm.entrypoints.openai.models.serving import OpenAIServingModels
 from vllm.entrypoints.openai.engine.protocol import ErrorResponse
 
 
